@@ -1077,7 +1077,9 @@ while :; do
 		;;
 	*)
 	  echo "输入了："
+	  echo "<<<<<"
 		echo $choose
+		echo ">>>>>"
 		error
 		;;
 	esac
