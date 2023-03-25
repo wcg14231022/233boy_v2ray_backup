@@ -1066,17 +1066,6 @@ while :; do
 		echo
 	fi
 	read -p "$(echo -e "请选择 [${magenta}1-2$none]:")" choose
-
-	while true; do
-  read -p "$(echo -e "请选择 [${magenta}1-2$none]:")" choose
-  choose=$(echo "${choose}" | tr -d ' ')
-  if [ -z "${choose}" ] || [ -z "$(echo -n "${choose}" | tr -d '[:print:]')" ]; then
-    echo "${choose}:输入不合法，请重新输入"
-  else
-    break
-  fi
-done
-
 	case $choose in
 	1)
 		install
